@@ -85,13 +85,6 @@ pCont [6] .textContent = siteContent["contact"] ['phone'];
 pCont [7] .textContent = siteContent["contact"] ['email'];
 pCont [8] .textContent = siteContent["footer"] ['copyright'];
 
+const midImg = document.querySelector('#middle-img');
+midImg.setAttribute('src', 'img/mid-page-accent.jpg');
 
-
-
-
-
-
-
-
-
-console.log(pCont);
