@@ -42,6 +42,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//Navigation Bar
 const navBar = document.querySelectorAll('nav > a');
 
 // console.log(navBar)
@@ -52,5 +53,14 @@ navBar [3] .textContent = siteContent.nav ['nav-item-4'];
 navBar [4] .textContent = siteContent.nav ['nav-item-5'];
 navBar [5] .textContent = siteContent.nav ['nav-item-6'];
 
+//Circle image
 const circleImage = document.querySelector('#cta-img');
 circleImage.src = siteContent.cta['img-src'];
+
+//title
+const title = document.querySelector ('h1');
+title.textContent = siteContent.cta.h1
+
+//Get Started Button
+const button = document.querySelector ('button');
+button.textContent = siteContent.cta.button;
