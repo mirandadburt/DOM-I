@@ -64,3 +64,34 @@ title.textContent = siteContent.cta.h1
 //Get Started Button
 const button = document.querySelector ('button');
 button.textContent = siteContent.cta.button;
+
+const headFour = document.querySelectorAll('h4');
+headFour [0] .textContent = siteContent["main-content"] ['features-h4'];
+headFour [1] .textContent = siteContent["main-content"] ['about-h4'];
+headFour [2] .textContent = siteContent["main-content"] ['services-h4'];
+headFour [3] .textContent = siteContent["main-content"] ['product-h4'];
+headFour [4] .textContent = siteContent["main-content"] ['vision-h4'];
+headFour [5] .textContent = siteContent["main-content"] ['contact-h4'];
+// console.log(headFour);
+
+const pCont = document.querySelectorAll('p');
+pCont [0] .textContent = siteContent["main-content"] ['features-content'];
+pCont [1] .textContent = siteContent["main-content"] ['about-content'];
+pCont [2] .textContent = siteContent["main-content"] ['services-content'];
+pCont [3] .textContent = siteContent["main-content"] ['product-content'];
+pCont [4] .textContent = siteContent["main-content"] ['vision-content'];
+pCont [5] .textContent = siteContent["contact"] ['address'];
+pCont [6] .textContent = siteContent["contact"] ['phone'];
+pCont [7] .textContent = siteContent["contact"] ['email'];
+pCont [8] .textContent = siteContent["footer"] ['copyright'];
+
+
+
+
+
+
+
+
+
+
+console.log(pCont);
