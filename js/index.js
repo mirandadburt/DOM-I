@@ -46,12 +46,17 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 const navBar = document.querySelectorAll('nav > a');
 
 // console.log(navBar)
+
 navBar [0] .textContent = siteContent.nav ['nav-item-1'];
 navBar [1] .textContent = siteContent.nav ['nav-item-2'];
 navBar [2] .textContent = siteContent.nav ['nav-item-3'];
 navBar [3] .textContent = siteContent.nav ['nav-item-4'];
 navBar [4] .textContent = siteContent.nav ['nav-item-5'];
 navBar [5] .textContent = siteContent.nav ['nav-item-6'];
+
+
+
+navBar.forEach((item) => {item.style.color = "green";});
 
 //Circle image
 const circleImage = document.querySelector('#cta-img');
@@ -88,3 +93,11 @@ pCont [8] .textContent = siteContent["footer"] ['copyright'];
 const midImg = document.querySelector('#middle-img');
 midImg.setAttribute('src', 'img/mid-page-accent.jpg');
 
+const theDOM = document.createElement("a");
+theDOM.textContent = "DOM";
+document.querySelector("nav").appendChild(theDOM);
+
+
+const miranda = document.createElement("a");
+miranda.textContent = "=M=";
+document.querySelector("nav").prepend(miranda); 
